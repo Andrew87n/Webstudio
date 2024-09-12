@@ -7,3 +7,11 @@
     --team-background-color:#F5F4FA;
     --footer-background-corol:#2F303A;
 }
+
+body{
+    font-family: "Roboto";
+}
+
+.header-logo{
+    font-family: "Raleway";
+}
