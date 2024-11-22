@@ -101,6 +101,7 @@ letter-spacing: 0.78px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: url();
 }
 
 .hero-text{
@@ -139,6 +140,32 @@ padding: 10px 32px;
 .features-list{
     display: flex;
     gap: 30px;
+}
+
+.features-item::before{
+content: "";
+display: block;
+margin-bottom: 30px;
+width: 270px;
+height: 120px;
+border-radius: 4px;
+background-color: var(--team-background-color);
+background-image: url(../images/antenna.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 70px;
+}
+
+.features-item:nth-child(2)::before{
+    background-image: url(../images/clock.png);
+}
+
+.features-item:nth-child(3)::before{
+    background-image: url(../images/diagram.png);
+}
+
+.features-item:nth-child(4)::before{
+    background-image: url(../images/astronaut.png);
 }
 
 .features-logo{
@@ -206,10 +233,12 @@ margin-bottom: 50px;
     gap: 30px;
 
 }
+
 .team-box{
     background-color: var(--title-color);
     padding-top: 30px;
     padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name{
