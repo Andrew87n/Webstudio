@@ -23,8 +23,12 @@
         </ul>
         </nav>
         <ul class="header-list">
-            <li class="list-address"><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
-            <li class="list-address"><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
+            <li class="address-item"><svg class="address-svgphone">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
+            <li class="address-item"><svg class="address-svgenvelope">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
         </ul>
     </div>
         </header>
@@ -32,7 +36,7 @@
             <section class="hero">
                 <div class="container">
                 <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
             </section>
             <section class="features">
@@ -62,13 +66,13 @@
                 <h2 class="wedo-logo">Чим ми займаємося</h2>
                 <ul class="wedo-list">
                     <li class="wedo-item"><img src="./images/laptop.jpg" alt="laptop" class="wedo-image">
-                    <p>Десктопні додатки</p>
+                    <p class="wedo-text">Десктопні додатки</p>
                     </li>
                     <li class="wedo-item"><img src="./images/comp.jpg" alt="computer" class="wedo-image">
-                    <p>Мобільні додатки</p>
+                    <p class="wedo-text">Мобільні додатки</p>
                     </li>
                     <li class="wedo-item"><img src="./images/colpalette.jpg" alt="color palette" class="wedo-image">
-                    <p>Дизайнерські рішення</p>
+                    <p class="wedo-text">Дизайнерські рішення</p>
                     </li>
                 </ul>
                 </div>
@@ -125,5 +129,13 @@
     </address>
     </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+            <button type="button" class="modal-close" data-modal-close><svg class="modal-buttonsvg">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg></button>
+            </div>
+          </div>
+          <script src="./js/modal.js"></script>
 </body>
 </html>
