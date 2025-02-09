@@ -671,14 +671,22 @@ letter-spacing: 0.48px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    opacity: 1;
+    /* opacity: 1; */
+    visibility: visible;
+    transition-property: visibility;
+    transition-duration: 2000ms;
   }
   
   .is-hidden{
-    opacity: 0;
+    /* opacity: 0; */
     pointer-events: none;
     visibility: hidden;
-  }
+    transition-property: visibility;
+    transition-duration: 2000ms;
+}
+  .is-hidden .modal{
+    transform: translate(0) rotate(0) scale(0);
+}
   
   .modal{
     width: 528px;
@@ -689,10 +697,11 @@ letter-spacing: 0.48px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%) rotate(360deg) scale(1);
   padding: 40px;
-  
-  }
+  transition-property: transform;
+  transition-duration: 2000ms;
+}
   
   .modal-close{
     width: 30px;
@@ -712,7 +721,7 @@ letter-spacing: 0.48px;
   .modal-close:hover,
   .modal-close:focus{
     .modal-buttonsvg{
-      fill: red;
+      fill: var(--accent-color);
     }
   }
 
