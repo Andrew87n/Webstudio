@@ -15,7 +15,7 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body{
@@ -65,6 +65,10 @@ letter-spacing: 0.78px;
     gap: 50px;
 }
 
+.navigation-item{
+    position: relative;
+}
+
 .navigation-link{
     color: var(--text-color);
     font-size: 14px;
@@ -75,10 +79,45 @@ letter-spacing: 0.78px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.navigation-link::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -65px;
+    left: 0px;
+    top: 47px;
+    visibility: hidden;
+    border-radius: 2px;
 }
 
 .navigation-link:hover{
     color: var(--accent-color);
+}
+
+.navigation-link:hover::after{
+    visibility: visible;
+}
+
+.current{
+    color: var(--accent-color);
+}
+
+.current::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -65px;
+    left: 0px;
+    top: 47px;
+    border-radius: 2px;
+    visibility: visible;
 }
 
 .header-list{
@@ -87,7 +126,7 @@ letter-spacing: 0.78px;
     align-items: center;
 }
 
-.address-item{
+.header-element{
 display: flex;
 gap: 10px;
 align-items: center;
@@ -96,7 +135,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-item:hover{
+.header-element:hover{
 color: var(--accent-color);
 fill: #2196F3;
 }
@@ -489,7 +528,7 @@ margin-bottom: 9px;
 display: inline-block;
 }
 
-.addres-item:first-child{
+.address-item:first-child{
     margin-bottom: 9px;
 }
 
@@ -546,7 +585,7 @@ fill: var(--title-color);
 }
 
 .footer-label{
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .footer-labeltext{
@@ -657,6 +696,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .brands-item{
     outline: 1px solid #EEE;
     flex-basis: calc((100% - 60px) / 3);
+    transition-property:box shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brands-item:hover{
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .brands-overflow{
@@ -664,14 +710,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 370px;
     height: 294px;
     overflow: hidden;
-    transition-property: visibility;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .brands-overflow:hover{
     .brands-desc{
         visibility: visible;
+        transform: translateY(0);
     }
 }
 
@@ -694,12 +739,16 @@ z-index: 1;
 background: rgba(33, 150, 243, 0.90);
 position: absolute;
 top: 0;
-right: 0;
+left: 0;
 width: 100%;
 height: 100%;
 margin: 0;
 padding: 50px 20px;
 visibility: hidden;
+transform: translateY(100%);
+transition-property: transform;
+transition-duration: 1000ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brandbox{
