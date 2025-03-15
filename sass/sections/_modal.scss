@@ -29,7 +29,7 @@
     width: 528px;
   height: 581px;
   border-radius: 4px;
-  background: #FFF;
+  background: $title-color;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
   position: absolute;
   top: 50%;
@@ -58,7 +58,7 @@
   .modal-close:hover,
   .modal-close:focus{
     .modal-buttonsvg{
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 
@@ -68,9 +68,8 @@
   }
 
   .modal-title{
-    color: #212121;
+    color: $text-color;
   text-align: center;
-  font-family: "Roboto";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -80,8 +79,7 @@
   }
 
   .modal-libe{
-    color: #757575;
-  font-family: "Roboto";
+    color: $additional-color;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -105,12 +103,12 @@
   .modal-input:hover,
   .modal-input:focus{
     border: none;
-    outline: 1px solid #2196F3;
+    outline: 1px solid $accent-color;
   }
 
   .modal-input:hover +.modal-svg,
   .modal-input:focus +.modal-svg{
-  fill:#2196F3;
+  fill: $accent-color;
   }
 
   .modal-comment{
@@ -127,8 +125,7 @@
   }
 
   .checkbox-prim{
-    color: #757575;
-  font-family: "Roboto";
+    color: $additional-color;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -138,8 +135,7 @@
   }
 
   .modal-link{
-    color: #2196F3;
-  font-family: "Roboto";
+    color: $accent-color;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -162,11 +158,10 @@
   .modal-button{
     padding: 10px 52px ;
     border-radius: 4px;
-    background: #2196F3;
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #FFF;
+    color: $title-color;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;

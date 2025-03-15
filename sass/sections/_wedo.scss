@@ -3,9 +3,8 @@
     padding-bottom: 94px;
 }
 
-.wedo-logo{
-    color: var(--text-color);
-
+.wedo__logo{
+    color: $text-color;
 text-align: center;
 font-size: 36px;
 font-style: normal;
@@ -15,17 +14,17 @@ letter-spacing: 1.08px;
 margin-bottom: 50px;
 
 }
-.wedo-list{
+.wedo__list{
     display: flex;
     gap: 30px;
 }
 
-.wedo-item{
+.wedo__item{
     position: relative;
 }
 
-.wedo-text{
-    color: var(--title-color);
+.wedo__text{
+    color: $title-color;
 text-align: center;
 font-size: 14px;
 font-style: normal;

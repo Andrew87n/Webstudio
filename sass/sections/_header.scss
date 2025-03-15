@@ -9,9 +9,8 @@
     
 }
 
-.header-logo{
-    color: var(--accent-color);
-
+.header__logo{
+    color: $accent-color;
 font-family: Raleway;
 font-size: 26px;
 font-style: normal;
@@ -21,9 +20,8 @@ letter-spacing: 0.78px;
 margin-right: 93px;
 }
 
-.header-span{
-   color: var(--logo-color);
-
+.header__span{
+   color: $logo-color;
 font-family: Raleway;
 font-size: 26px;
 font-style: normal;
@@ -32,21 +30,21 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 
-.header-navigation{
+.header__navigation{
     margin-right: auto;
 }
 
-.navigation-list{
+.header__items{
     display: flex;
     gap: 50px;
 }
 
-.navigation-item{
+.header__item{
     position: relative;
 }
 
-.navigation-link{
-    color: var(--text-color);
+.header__link{
+    color: $text-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -58,11 +56,11 @@ letter-spacing: 0.78px;
     position: relative;
 }
 
-.navigation-link::after{
+.header__link::after{
     content: "";
     width: 100%;
     height: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     position: absolute;
     bottom: -65px;
     left: 0px;
@@ -71,23 +69,23 @@ letter-spacing: 0.78px;
     border-radius: 2px;
 }
 
-.navigation-link:hover{
-    color: var(--accent-color);
+.header__link:hover{
+    color: $accent-color;
 }
 
-.navigation-link:hover::after{
+.header__link:hover::after{
     visibility: visible;
 }
 
 .current{
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .current::after{
     content: "";
     width: 100%;
     height: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     position: absolute;
     bottom: -65px;
     left: 0px;
@@ -96,13 +94,13 @@ letter-spacing: 0.78px;
     visibility: visible;
 }
 
-.header-list{
+.header__list{
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-.header-element{
+.header__element{
 display: flex;
 gap: 10px;
 align-items: center;
@@ -111,13 +109,13 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-element:hover{
-color: var(--accent-color);
+.header__element:hover{
+color: $accent-color;
 fill: #2196F3;
 }
 
-.address-link{
-    color: var(--additional-color);
+.header__info{
+    color: $additional-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -125,16 +123,16 @@ fill: #2196F3;
     letter-spacing: 0.28px; 
 }
 
-.address-link:hover{
-    color: var(--accent-color);
+.header__info:hover{
+    color: $accent-color;
 }
 
-.address-svgphone{
+.header__svgphone{
     width: 15px;
 height: 16px;
 }
 
-.address-svgenvelope{
+.header__svgenvelope{
     width: 16px;
 height: 12px;
 }

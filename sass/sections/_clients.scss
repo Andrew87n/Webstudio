@@ -4,7 +4,7 @@
 }
 
 .clients-logo{
-    color: var(--text-color);
+    color: $text-color;
 text-align: center;
 font-size: 36px;
 font-style: normal;
@@ -37,17 +37,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .clients-link:hover{
     border: none;
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
     .clients-svg{
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
 .clients-link:focus{
     border: none;
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
     .clients-svg{
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
