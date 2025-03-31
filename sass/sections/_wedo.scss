@@ -1,9 +1,9 @@
 .wedo{
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.wedo__logo{
+
+&__logo{
     color: $text-color;
 text-align: center;
 font-size: 36px;
@@ -14,16 +14,16 @@ letter-spacing: 1.08px;
 margin-bottom: 50px;
 
 }
-.wedo__list{
+&__list{
     display: flex;
     gap: 30px;
 }
 
-.wedo__item{
+&__item{
     position: relative;
 }
 
-.wedo__text{
+&__text{
     color: $title-color;
 text-align: center;
 font-size: 14px;
@@ -38,4 +38,6 @@ position: absolute;
 bottom: 0;
 background-color: rgba(47, 48, 58, 0.80);
 width: 100%;
+}
+
 }

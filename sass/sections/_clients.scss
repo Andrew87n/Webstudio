@@ -1,9 +1,9 @@
 .clients{
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.clients-logo{
+
+&__logo{
     color: $text-color;
 text-align: center;
 font-size: 36px;
@@ -16,13 +16,13 @@ margin-left: auto;
 margin-bottom: 50px;
 }
 
-.clients-list{
+&__list{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.clients-link{
+&__link{
     width: 170px;
 height: 92px;
 border-radius: 4px;
@@ -33,26 +33,29 @@ justify-content: center;
 transition-property: border, outline, fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-link:hover{
+&:hover{
     border: none;
     outline: 1px solid $accent-color;
-    .clients-svg{
+    .clients__svg{
         fill: $accent-color;
     }
 }
 
-.clients-link:focus{
+&:focus{
     border: none;
     outline: 1px solid $accent-color;
-    .clients-svg{
+    .clients__svg{
         fill: $accent-color;
     }
 }
 
-.clients-svg{
+}
+
+&__svg{
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
+}
+
 }

@@ -1,15 +1,15 @@
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
-}
 
-.headerflex{
+
+&flex{
     display: flex;
     align-items: center;
     
 }
 
-.header__logo{
+&__logo{
     color: $accent-color;
 font-family: Raleway;
 font-size: 26px;
@@ -20,7 +20,7 @@ letter-spacing: 0.78px;
 margin-right: 93px;
 }
 
-.header__span{
+&__span{
    color: $logo-color;
 font-family: Raleway;
 font-size: 26px;
@@ -30,20 +30,20 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 
-.header__navigation{
+&__navigation{
     margin-right: auto;
 }
 
-.header__items{
+&__items{
     display: flex;
     gap: 50px;
 }
 
-.header__item{
+&__item{
     position: relative;
 }
 
-.header__link{
+&__link{
     color: $text-color;
     font-size: 14px;
     font-style: normal;
@@ -54,9 +54,8 @@ letter-spacing: 0.78px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-}
 
-.header__link::after{
+&::after{
     content: "";
     width: 100%;
     height: 4px;
@@ -69,19 +68,66 @@ letter-spacing: 0.78px;
     border-radius: 2px;
 }
 
-.header__link:hover{
+&:hover{
+    color: $accent-color;
+}
+&:hover::after{
+    visibility: visible;
+}
+
+}
+
+&__list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+&__element{
+display: flex;
+gap: 10px;
+align-items: center;
+transition-property: color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&__element:hover{
+color: $accent-color;
+fill: #2196F3;
+}
+
+}
+
+&__info{
+    color: $additional-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px; 
+
+&:hover{
     color: $accent-color;
 }
 
-.header__link:hover::after{
-    visibility: visible;
+}
+
+&__svgphone{
+    width: 15px;
+height: 16px;
+}
+
+&__svgenvelope{
+    width: 16px;
+height: 12px;
+}
+
 }
 
 .current{
     color: $accent-color;
-}
 
-.current::after{
+&::after{
     content: "";
     width: 100%;
     height: 4px;
@@ -94,45 +140,4 @@ letter-spacing: 0.78px;
     visibility: visible;
 }
 
-.header__list{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.header__element{
-display: flex;
-gap: 10px;
-align-items: center;
-transition-property: color, fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__element:hover{
-color: $accent-color;
-fill: #2196F3;
-}
-
-.header__info{
-    color: $additional-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px; 
-}
-
-.header__info:hover{
-    color: $accent-color;
-}
-
-.header__svgphone{
-    width: 15px;
-height: 16px;
-}
-
-.header__svgenvelope{
-    width: 16px;
-height: 12px;
 }
