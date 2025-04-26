@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container headerflex">
+      <div class="container header__flex">
         <a href="./index.html" class="header__logo animate__animated animate__lightSpeedInLeft"
           >Web<span class="header__span animate__animated animate__lightSpeedInLeft">Studio</span></a
         >
@@ -105,20 +105,23 @@
           <ul class="wedo__list">
             <li class="wedo__item">
               <picture>
-              <img src="./images/computer.webp" alt="laptop" class="wedo__image" />
+                <source srcset="./images/desktop/pc-desktop@1x.webp 1x, ./images/desktop/pc-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <img src="./images/computer.webp" alt="laptop" class="wedo__image"/>
             </picture>
               <p class="wedo__text">Десктопні додатки</p>
             </li>
             <li class="wedo__item">
-              <img src="./images/phone.webp" alt="computer" class="wedo__image" />
+              <picture>
+                <source srcset="./images/desktop/phone-deskop@1x.webp 1x, ./images/desktop/phone-deskop@2x.webp 2x" media="(min-width: 1200px)">
+              <img src="./images/phone.webp" alt="computer" class="wedo__image"/>
+              </picture>
               <p class="wedo__text">Мобільні додатки</p>
             </li>
             <li class="wedo__item">
-              <img
-                src="./images/tablet.webp"
-                alt="color palette"
-                class="wedo-image"
-              />
+              <picture>
+                <source srcset="./images/desktop/tb-desktop@1x.webp 1x, ./images/desktop/tb-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <img src="./images/tablet.webp" alt="color palette" class="wedo-image"/>
+              </picture>
               <p class="wedo__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -129,11 +132,12 @@
           <h2 class="team__logo">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/ihor.webp"
-                alt="Ігор Дем'яненко"
-                class="team__img"
-              />
+              <picture>
+              <source srcset="./images/desktop/ihor-desktop@1x.webp 1x, ./images/desktop/ihor-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./images/tablet/ihor-tablet@1x.webp 1x, ./images/tablet/ihor-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source srcset="./images/mobile/ihor-mobile@1x.webp 1x, ./images/mobile/ihor-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <img src="./images/ihor.webp" alt="Ігор Дем'яненко" class="team__img"/>
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -171,11 +175,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/olha.webp"
-                alt="Ольга Рєпіна"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="./images/desktop/olha-desktop@1x.webp 1x, ./images/desktop/olha-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/olha-tablet@1x.webp 1x, ./images/tablet/olha-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/mobile/olha-mobile@1x.webp 1x, ./images/mobile/olha-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <img src="./images/olha.webp" alt="Ольга Рєпіна" class="team__img"/>
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -213,11 +218,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/mykola.webp"
-                alt="Микола Тарасов"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="./images/desktop/mykola-desktop@1x.webp 1x, ./images/desktop/mykola-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/mykola-tablet@1x.webp 1x, ./images/tablet/mykola-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/mobile/mykola-mobile@1x.webp 1x, ./images/mobile/mykola-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <img src="./images/mykola.webp" alt="Микола Тарасов" class="team__img"/>
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -255,11 +261,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/myhaylo.webp"
-                alt="Михайло Єрмаков"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="./images/desktop/myhaylo-desktop@1x.webp 1x, ./images/desktop/myhaylo-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/myhaylo-tablet@1x.webp 1x, ./images/tablet/myhaylo-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/mobile/myhaylo-mobile@1x.webp 1x, ./images/mobile/myhaylo-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <img src="./images/myhaylo.webp" alt="Михайло Єрмаков"class="team__img"/>
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -347,7 +354,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+     <footer class="footer">
       <div class="container">
         <div class="footer__main">
         <a href="./index.html" class="footer__logo">Web<span class="footer__span">Studio</span></a>
