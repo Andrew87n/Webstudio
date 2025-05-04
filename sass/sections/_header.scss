@@ -267,9 +267,8 @@ letter-spacing: 0.68px;
   gap: 10px;
   flex-wrap: wrap;
 }
-
-&__el:not(:last-child){
-
+&__el{
+&:not(:last-child){
   .menu__ciberlink::after{
     content:"";
     display: inline-block;
@@ -280,3 +279,10 @@ letter-spacing: 0.68px;
     }
 }
 }
+
+&__ciberlink{
+  color: $accent-color;
+}
+
+}
+

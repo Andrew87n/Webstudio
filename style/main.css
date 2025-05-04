@@ -297,6 +297,9 @@ body {
   background: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
+.menu__ciberlink {
+  color: #2196F3;
+}
 
 .hero {
   padding-top: 118px;
