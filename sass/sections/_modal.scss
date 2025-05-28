@@ -40,6 +40,14 @@
   transition-property: transform;
   transition-duration: 2000ms;
 
+@media screen and (min-width: 480px) {
+    width: 450px;
+  }
+    
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+      }
+
   &__close {
     width: 30px;
     height: 30px;

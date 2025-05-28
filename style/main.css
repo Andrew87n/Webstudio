@@ -1125,6 +1125,16 @@ body {
   transition-property: transform;
   transition-duration: 2000ms;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal__close {
   width: 30px;
   height: 30px;
